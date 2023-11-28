@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.order-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.order-item {
+  border: 1px solid #ffa07a; /* Light Salmon */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.order-item h2 {
+  color: #ff6347; /* Tomato */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.order-item p {
+  margin: 5px 0;
+}
+
+.order-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item ul li {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #ff8c00; /* Dark Orange */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #ff7f50; /* Coral */
+}
+
+hr {
+  margin: 15px 0;
+  border: 0.5px solid #ddd;
 }
